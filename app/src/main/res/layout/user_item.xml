@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_label_address"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@android:drawable/ic_menu_upload" />
+
+        <TextView
+            android:id="@+id/tv_user_full_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:maxWidth="250dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/iv_user_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/iv_user_icon"
+            app:layout_constraintTop_toTopOf="@+id/iv_user_icon"
+            android:text="Jeremy Smith Jr" />
+
+        <TextView
+            android:id="@+id/tv_label_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/address_label"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/iv_user_icon"
+            app:layout_constraintTop_toBottomOf="@id/iv_user_icon" />
+
+        <TextView
+            android:id="@+id/tv_user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+
+            android:maxWidth="250dp"
+            android:text="new york street"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_label_address"
+            app:layout_constraintTop_toTopOf="@id/tv_label_address" />
+
+        <TextView
+            android:id="@+id/tv_label_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/telephone_label"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/iv_user_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_user_address" />
+
+        <TextView
+            android:id="@+id/tv_user_telephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_label_telephone"
+            app:layout_constraintTop_toTopOf="@id/tv_label_telephone"
+            android:text="8 923 699 27 36" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

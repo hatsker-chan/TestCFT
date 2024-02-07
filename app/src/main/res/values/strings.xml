@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestCFT</string>
+    <string name="address_label">Address:</string>
+    <string name="telephone_label">Telephone:</string>
+    <string name="full_name_label">Full name:</string>
+    <string name="gender_label">Gender:</string>
+    <string name="phone_number_label">Phone number:</string>
+    <string name="email_label">Email:</string>
+    <string name="age_label">Age:</string>
+    <string name="login_label">Login:</string>
+    <string name="refresh_list">refresh list</string>
+</resources>
